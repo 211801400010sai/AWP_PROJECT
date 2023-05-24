@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" />
+    <title>Online Shopping Website</title>
+
+    <!--css file-->
+    <link rel="stylesheet" href="amazon.css"  type="text/css">
+    
+
+    <!--js file-->
+    <link rel="stylesheet" href="todaydeal.js"   type="text/js">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container-header">
+            <div class="logo-container border-white">
+                <div class="logo"></div>
+                <span class="dotin">.in</span>
+            </div>
+
+            <div class="address-container border-white">
+                <p class="hello">Deliver to</p>
+                <div class="icon-address">
+                    <i class="fa-solid fa-location-dot icon-location"></i>
+                    <p>Pediredla Gane...
+                        vzm 535003
+                    </p>
+                </div>
+            </div>
+            <div class="search-container">
+                <select>
+                    <option>All</option>
+                    <option value="mobiles">MOBILES</option>
+			        <option value="java">FASHIONS</option>
+			        <option value="C++">ESSENTIALS</option>
+			        <option value="php">FURNITURE</option>
+			        <option value="perl">WATCHES</option>
+                    <option value="mobiles">GROCERY</option>
+			        <option value="java">ELECTRONICS</option>
+			        <option value="C++">SPORTS</option>
+			        <option value="php">GIFT CARDS</option>
+			        <option value="perl">MEDICINES</option>
+                    <option value="java">APPLIANCES</option>
+			        <option value="C++">BEAUTY CARE</option>
+			        <option value="php">PERSONAL CARE</option>
+			        <option value="perl">VEHICLES</option>
+                </select>
+                </select>
+                <input type="text" class="search-input" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+            <div class="language-container border-white">
+                <p>English</p>
+                <div class="lauguge-image">
+                    <img
+                        src="https://media.istockphoto.com/vectors/vector-flag-of-the-republic-of-india-proportion-23-the-national-flag-vector-id1051236720?k=20&m=1051236720&s=612x612&w=0&h=ATObRTHmTosADa9zaB2dQPn_VAQmG1XYH2x92kzc304=" />
+                </div>
+            </div>
+
+            <div class="login-container border-white">
+               <!-- <button class="s" onclick="window.location.href = 'sign_up.html';" >Sign Up</button> -->
+          <!-- <div class="sign-in"> -->
+          <button class="sign-in" onclick="window.location.href = 'login.html';" >sign in</button>
+          <div class="connect"></div>
+          <li class="border-white"><a href="http://127.0.0.1:5500/signup%20form.html">sign in</a></li>
+          <!-- </div> -->
+        
+            </div>
+
+            <div class="return-order-container">
+                <p>Returns
+                <div class="order">& Orders</div>
+                </p>
+            </div>
+
+            <div class="cart-container border-white">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <li><a href="https://www.amazon.in/gp/your-account/order-history?ref_=ya_d_c_yo">Cart</a></li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROZH3p80xS4vLxhv2g9yzV334_6-XH2DXhLA&usqp=CAU" alt="" width="80px" height="80px" > 
+            </div>
+        </div>
+    </header>
+
+    <!--navigation-->
+    <nav class="nav">
+        <div class="container container-nav">
+            <ul>
+                <li class="border-white" id="open-nav-sidebar">
+                    <span class="open-nav-slider">
+                        <i class="fa-solid fa-bars"></i>
+                        All
+                    </span>
+                </li>
+                <li class="border-white"><a href="https://thevou.com/fashion/top-fashion-brands/">Best Sellers</a></li>
+                <li class="border-white"><a href="https://www.amazon.in/stores/page/E26496F9-3904-425A-95FE-6F6E01C3E3F0?tag=msndeskstdin-21&ref=pd_sl_2p6dv0thzd_b&adgrpid=1318316051400565&hvadid=82395012037172&hvnetw=o&hvqmt=b&hvbmt=bb&hvdev=c&hvlocint=&hvlocphy=1647&hvtargid=kwd-82395636520001:loc-90&hydadcr=5848_1955262">Today's Deals</a></li>
+                <li class="border-white"><a href="https://www.reliancedigital.in/smartphones/c/S101711">Mobiles</a></li>
+                <li class="border-white"><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help">Customer Service</a></li>
+                <li class="border-white"><a href="https://www.amazon.in/s?k=iiot+sensors&i=todays-deals&crid=3VJU25DD8WJ1G&sprefix=iiot+sensors%2Ctodays-deals%2C329&ref=nb_sb_noss">Electronic</a></li>
+                <li class="border-white"><a href="https://www.amazon.in/s?k=home+and+kitchen&i=todays-deals&crid=3FO5MM39C7O1K&sprefix=home+and+kitchen%2Ctodays-deals%2C717&ref=nb_sb_noss_1">Home & Kitchen</a></li>
+                <li class="border-white"><a href="https://www.amazon.in/s?k=fashion+for+men&i=todays-deals&crid=2C7CNZNECQQPA&sprefix=fashions+for+men%2Ctodays-deals%2C1067&ref=nb_sb_ss_sc_1_15">Fashion</a></li>
+                <li class="border-white"><a href="https://www.amazon.in/s?k=books+and+articles&i=todays-deals&crid=246099SL9U19B&sprefix=books+and+article%2Ctodays-deals%2C423&ref=nb_sb_noss">Book</a></li>
+                <li class="border-white prime-image-hover">
+                    <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_pds_amz_in_as_s_b_brand28_mkw_fQQR2NKb-dc?mrntrk=pcrid_75454108097584_slid__pgrid_1207264149347696_pgeo_1647_x__ptid_kwd-75454277835074:loc-90">Prime</a>
+                    <div class="prime-image">
+                        <img
+                            src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg" />
+                    </div>
+
+                </li>
+            </ul>
+            <div class="nav-right-image-amazon-prime">
+                <img
+                    src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Ravina/Desktop/Watch-Entertainment-for-FREE_400-x39._CB605460886_.jpg" /> 
+            </div>
+        </div>
+    </nav>
+<!--image slider -->
+    <section>
+        <div class="image-container">
+            <div class="image-list">
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/71cp9PVuTfL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/ed8159a5-277e-4afb-a4d5-b8c2b9ca0e1c._CR0,0,1280,670_SX405_QL70_.jpeg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/71cQMXCLSvL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61O72XhcEkL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61VuJdpjvaL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61UrRx+3LLL._SX3000_.jpg" />
+                </div>
+            </div>
+            <div class="image-btn-container">
+
+                <button class="slider-btn" id="slide-btn-left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn" id="slide-btn-right"><i class="fa-solid fa-chevron-right"></i></i></button>
+        </div>
+    </section>
+
+
+    <!--product container card-->
+    <main class="main">
+        <div class="card-product-container container">
+            <div class="card-product">
+                <h2>Up to 60% off | Styles for Men</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg" />
+                        <p>clothing</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg" />
+                        <p>fashion</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://staticimg.titan.co.in/Titan/Catalog/90165AP01_1.jpg?impolicy=pqmed&imwidth=640" />
+                        <p>Watches</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg" />
+                        <p>Bags & language</p>
+                    </div>
+                </div>
+                <a href="https://www.amazon.in/s?k=casual+black+shirts+for+men+stylish+latest&adgrpid=1327112144362189&hvadid=82944767844580&hvbmt=bb&hvdev=c&hvlocphy=1647&hvnetw=o&hvqmt=b&hvtargid=kwd-82945389514129%3Aloc-90&hydadcr=23490_1953538&tag=msndeskstdin-21&ref=pd_sl_7h3wjxosjr_b">visit our fashion store</a>
+            </div>
+            <div class="card-product">
+                <h2>Redefine your living room</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_03_low._SY116_CB605507312_.jpg" />
+                        <p>Sofa cum beds</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_04_low._SY116_CB605507312_.jpg" />
+                        <p>Office chairs & study</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_5._SY116_CB606110532_.jpg" />
+                        <p>Table Stands</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_02_low._SY116_CB605507312_.jpg" />
+                        <p>Wooden Chairs</p>
+                    </div>
+                </div>
+                <a href="https://www.amazon.in/s?k=furniture+store&crid=170106WI4YCGL&sprefix=fur%2Caps%2C403&ref=nb_sb_noss_1">Visit our furniture store</a>
+            </div>
+            <div class="card-product">
+                <h2>Top rated,Home Products</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_1._SY116_CB606110532_.jpg" />
+                        <p>Home Products</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_01_low._SY116_CB605507312_.jpg" />
+                        <p>Bean Bags</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://www.bing.com/th/id/OIP.QAriJ0FMKKDaJcp9tGtKVwHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" />
+                        <p>Daily essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg" />
+                        <p>Fashion</p>
+                    </div>
+                </div>
+            <a href="https://www.amazon.in/s?k=home+products+for+daily+essentials&crid=2I87RCRNH3QE3&sprefix=home+products+for+daily+essentia%2Caps%2C486&ref=nb_sb_noss_2">visit our home products store</a>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality dryfruits</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://th.bing.com/th/id/OIP.NBYzErgSK5LNhLQa0gbuhwHaFj?w=220&h=180&c=7&r=0&o=5&pid=1.7" />
+                        <p>Cashew</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_3._SY116_CB606110532_.jpg" />
+                        <p>Dried Grapes</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71vWMDX9C9L._AC_UL400_.jpg" />
+                        <p>Alamond</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://th.bing.com/th?q=Dry+Dates+Fruit&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" />
+                        <p>Lion dates</p>
+                    </div>
+                </div>
+                <a href="https://www.amazon.in/events/greatsummersale/?ref_=nav_cs_gb">visit our dryfruits store</a>
+            </div>
+        </div>
+
+        <div class="card-product-container container productBackgraound">
+            <div class="card-product">
+                <h2>Shop By Health Conditions</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/61eNW65rU0L._AC_UL400_.jpg" />
+                        <p>Stress Relief Tablets</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71lD7eaOUZS._AC_UL400_.jpg" />
+                        <p>Covid 19 kit</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/41lEX4m86jL._AC_UL400_.jpg" />
+                        <p>Ayurvedic Kit</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/61r8O-WN5TL._AC_UL400_.jpg" />
+                        <p>Skin Care</p>
+                    </div>
+                </div>
+                <a href="https://www.amazon.in/s?k=health+care+medicine&crid=3QBXLGJ5DXUL1&sprefix=health+care+medi%2Caps%2C3444&ref=nb_sb_ss_ts-doa-p_1_16">visit our medical store</a>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality | Sports Kits</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/719XivSKpYL._AC_UL400_.jpg" />
+                        <p>Cricket Kit</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/61sJxgm+YaL._AC_UL400_.jpg" />
+                        <p>Batmenton Kits</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71GeLPOOAIL._AC_UL400_.jpg" />
+                        <p>Atheletics Kit</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71jQaa6+WNL._AC_UL400_.jpg" />
+                        <p>Volley Ball Kit</p>
+                    </div>
+                </div>
+                <a href="https://www.amazon.in/s?k=sports+kits&crid=2ABLVEZOY31NW&sprefix=sports+ki%2Caps%2C608&ref=nb_sb_noss_2">visit our sports kit store</a>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality | Grocery</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/81Xzx5PHTFL._AC_UL400_.jpg" />
+                        <p>Food</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71qzzKejiWL._AC_UL400_.jpg" />
+                        <p>Detergent powders</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/91JCOjzphgL._SL1500_.jpg" />
+                        <p>Cooking Things</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/81bcWhYjdGL._AC_UL400_.jpg" />
+                        <p>Soaps</p>
+                    </div>
+                </div>
+                <a href="https://www.amazon.in/s?k=grocery+items&crid=2FP4DZ9IWZO00&sprefix=groce%2Caps%2C1059&ref=nb_sb_ss_ts-doa-p_4_5">visit our Grocery Items</a>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality | Electronics</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/715in+5sLVS._AC_UL400_.jpg" />
+                        <p>IOT Sensors</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://m.media-amazon.com/images/I/615j5POH6hL._AC_UL400_.jpg" />
+                        <p>Desktops</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://th.bing.com/th/id/OIP.kMSBH-YguK5E7eArzk6pqAHaDt?w=321&h=175&c=7&r=0&o=5&pid=1.7" />
+                        <p>Micro Controllers</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://th.bing.com/th?q=Electronic+Toys&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" />
+                        <p>Robuts</p>
+                    </div>
+                </div>
+                <a href="https://www.amazon.in/s?k=electronics&i=electronics&ref=nb_sb_noss">visit our Electronic Store</a>
+            </div>
+        </div>
+
+    
+    <!--today's deals -->
+    <section class="today_deals_container">
+        <div class="today_deals_heading">
+            <h1>Today's Deals</h1>
+            <p><a href="https://www.amazon.in/s?k=deals+for+adidas+campus+shoes&ref=nb_sb_noss">See all deals</a></p>
+        </div>
+
+        <div class="today_deals_product_container">
+            <div class="today_deals_btn_container">
+                <button  class="today_deal_btn" id="today_deal_btn_prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="today_deal_btn" id="today_deal_btn_next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+
+            <div class="today_deals_product_list">
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 52% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 62% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 90% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 52% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 52% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </section>        
+  <main>
+        <div class="container">
+            <div class="box">
+              <a href="appliances.html">
+                <h1> Daily Appliances</h1>
+                <img
+                        src="https://thumbs.dreamstime.com/b/set-flat-icons-household-items-commercial-use-online-store-refrigerator-electric-stove-dishwasher-coffee-maker-blender-173757223.jpg"
+                        alt="household items" width="220px" height="230px"></a>
+            </div>
+            <div class="box">
+              <a href="clothes.html">
+                <h1>Fashions For Women</h1>
+                <img
+                        src="https://th.bing.com/th/id/OIP.HmRPeOvIvaFVG6erPuXZhAHaG3?w=197&h=182&c=7&r=0&o=5&pid=1.7"
+                        alt="clothes" width="220px" height="230px"> </a>
+            </div>
+            <div class="box">
+              <a href="shoes.html">
+                <h1>Shoes For Men</h1>
+                <img
+                        src="https://d1af89beukha9h.cloudfront.net/wp-content/uploads/2018/10/shoe-companies.jpg"
+                        alt="shoes" width="220px" height="230px"></a>
+            </div>
+            <div class="box">
+              <a href="watches.html">
+                <h1>Watches For men</h1>
+                <img
+                        src="https://cdn.shopify.com/s/files/1/0627/5517/files/Men_s-Jan-21-V2_8d323b4e-7e7e-480e-a82e-d47042bd7f7b_450x@2x.jpg?v=1620867060"
+                        alt="watches" width="220px" height="230px"></a>
+            </div>
+            <div class="box">
+                <a href="watches.html">
+                  <h1>Medicines For Health</h1>
+                  <img
+                          src="https://th.bing.com/th/id/OIP.GUc6mFOs7k-uoBgd0c4jkwHaE6?w=237&h=180&c=7&r=0&o=5&pid=1.7"
+                          alt="Medicines" width="220px" height="230px"></a>
+                </div>
+                <div class="box">
+                    <a href="watches.html">
+                      <h1>Cosmetics</h1>
+                      <img
+                              src="https://th.bing.com/th/id/OIP.tanFCay8tEfVTq7W8dXnsAHaE8?w=226&h=180&c=7&r=0&o=5&pid=1.7"
+                              alt="Medicines" width="220px" height="230px"></a>
+                    </div>
+</div>
+  </main>
+<div class="container">
+            <div class="box">
+              <a href="jewellery.html">
+                <h1>Fashion Jewellery</h1>
+                <img src="https://th.bing.com/th/id/OIP.tYITF3WVu6DMKf6qyZ-WDgHaKQ?pid=ImgDet&rs=1"
+                        alt="fashion Jewellery" width="230px" height="230px"></a>
+            </div>
+            <div class="box">
+              <a href="grocery.html">
+                <h1>Grocery items</h1>
+                <img
+                        src="https://th.bing.com/th/id/OIP.bbQ1Zf12Mw10XeyKicpQ-QHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7"
+                        alt="grocery items" width="220px" height="230px">> </a>
+            </div>
+            <div class="box">
+              <a href="electronc.html">
+                <h1>Electronics devices</h1>
+                <img src="https://i.ytimg.com/vi/vZqvPuVc42c/maxresdefault.jpg" alt="Electronics devices"
+                        width="210px" height="230px"></a>
+            </div>
+            <div class="box">
+              <a href="furniture.html">
+                <h1>Furniture</h1>
+                <img src="https://th.bing.com/th/id/OIP.CEpxmfU6PlPUCl5L3_jblQHaEN?w=300&h=180&c=7&r=0&o=5&pid=1.7" alt="furniture"
+                        width="220px" height="230px"></a>
+            </div>
+            <div class="box">
+                <a href="furniture.html">
+                  <h1>Home Products</h1>
+                  <img src="https://th.bing.com/th/id/OIP.QAriJ0FMKKDaJcp9tGtKVwHaHa?w=152&h=180&c=7&r=0&o=5&pid=1.7" alt="furniture"
+                          width="220px" height="230px"></a>
+              </div>
+              <div class="box">
+                <a href="furniture.html">
+                  <h1>Ayuredivic</h1>
+                  <img src="https://th.bing.com/th/id/OIP.x2gxPuxdQJMN2Yw8ZOtOtAHaFj?w=218&h=180&c=7&r=0&o=5&pid=1.7" alt="furniture"
+                          width="220px" height="230px"></a>
+              </div>
+        </div>
+    </main>
+<div class="container3"><img src="https://i.gadgets360cdn.com/large/sale-main_1569658905284.jpg" alt="" width="2515vw" height="800vh"></div>
+
+    <div class="container3">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Pharmacy/Header_final.jpg" alt="" width="2515vw" height="500vh" >
+    </div>
+<div class="container2">    
+    <div class="offer">      
+     <a href="special-offer.html"><u>SPECIAL OFFER!!</u></a><br>                
+ONLY FOR THREE DAYS: <br>    
+ Hurry Up <br>  
+        <img  src="https://image.freepik.com/free-vector/design-flat-banner-birthday-individual-special-offer-sale-card-online-shopping-with-decor-gifts-piece-cake_171580-185.jpg" alt="" width="300px" height="200px">
+    </div>
+    <div class="offer">    
+        <a href="deal-of-the-day.html"><u>Deal of the day!!</u></a><br>   
+        Don't miss this <br>
+        shop now<br>          
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp-k28KuAXLon_dvtS8ctfYZumWk9tG9_krQ&usqp=CAU" alt="" width="300px" height="200px">
+        </div>
+        <div class="offer"> 
+            <a href="festive.html"><u>festival-offers!!</u></a><br>
+             LIMITED days : <br>
+             Fetch it <br>
+           <img src="https://th.bing.com/th/id/OIP.6__5ypV8IupP88d1VvkWIgHaEx?w=273&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="300px" height="200px">
+            </div>
+            <div class="offer">    
+                <a href="covid-safety-kit.html"><u>COVID safety kit!!</u></a><br> 
+                Stay home, Stay safe <br>
+                safety first <br>           
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa7IKyE73VayCw2JK6MWmud0FeEKb6w9_Abg&usqp=CAU" alt="" width="300px" height="200px">
+                </div>
+        </div>
+
+
+        <div class="container3">
+          <img src="https://is3-ssl.mzstatic.com/image/thumb/Features22/v4/54/5f/0d/545f0d25-70b1-979d-5af8-8f40706aeacb/source/4320x1080sr.png" alt="" width="2515vw" height="600vh" >
+      </div>
+<div class="back"> <a href="#back-to-top"> Back to top</a></div>   
+      <footer >
+          <div class="end">
+          <div class="connect">
+            <h2>Get to know us</h2>
+            <li><a href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer">about us</a></li>
+            <li><a href="https://amazon.jobs/en/">Careers</a></li>
+            <li><a href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer">Pre Releases</a></li>
+            <li><a href="https://www.amazon.science/">Amazon science</a></li>
+          </div>
+          <div class="connect">
+              <h2>Connect with us</h2>
+              <li><a href="https://www.facebook.com/AmazonIN">facebook</a></li>
+              <li><a href="https://twitter.com/AmazonIN">twitter</a></li>
+              <li><a href="https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Fwww.instagram.com%2Famazondotin%3F__coig_ufac%3D1">instagram</a></li>
+          </div>
+          <div class="connect">
+            <h2>Make Money With Us</h2>
+            <li><a href="https://www.amazon.in/b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C">Sell on Amazon</a></li>
+            <li><a href="https://www.amazon.in/b/?node=16192220031&ref_=map_1_b2b_GW_FT">Sell under Amazon Accelerator</a></li>
+            <li><a href="https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT">Protect and Build Your Brand</a></li>
+            <li><a href="https://sell.amazon.in/grow-your-business/amazon-global-selling?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1">Amazon Global Selling</a></li>
+            <li><a href="https://advertising.amazon.com/en-gb?ref=Amz.in">Advertise Your Products</a></li>
+            <li><a href="https://www.amazonpay.in/merchant">Amazon Pay on Merchants</a></li>
+        </div>
+          <div>
+          <h2>Let Us Help You</h2>
+          <li>Your Account</li>
+          <li>Amazon App Download</li>
+          <li>Amazon Assistant Download</li>
+          <li>Help</li>
+         </div><br>
+      </div>
+      <hr>
+      <div class="choice">
+          <img src="https://jungletopp.com/wp-content/uploads/2020/08/Amazon-1-1.jpg" alt="" width="400px" height="150px">
+      </div>
+      </footer>    
+      </body>
+      <script src="amazonscript.js"></script>
+  </html>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
